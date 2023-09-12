@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: httpcontent
+  namespace: test-app
+data:
+  index.html: |
+    <html>
+      <body>
+        <h1>It works!</h1>
+        <p>httpd web server on k8s pod with this content on configmap</p>
+      </body>
+    </html>
