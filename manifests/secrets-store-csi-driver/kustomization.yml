@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - namespace.yml
   - helm-repository.yml
-  - helm-release.yml
+  - secrets-store-csi-driver.yml
