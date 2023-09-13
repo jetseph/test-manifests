@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - ../../manifests/test-app
   - ../../manifests/ingress-nginx
-  # - ../../manifests/cert-manager
+  - ../../manifests/cert-manager
