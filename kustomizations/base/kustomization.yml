@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - ../../manifests/external-secrets
   - ../../manifests/test-app
+  - ../../manifests/ingress-nginx
