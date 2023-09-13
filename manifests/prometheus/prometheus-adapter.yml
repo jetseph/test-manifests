@@ -1,0 +1,19 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: prometheus-adapter
+  namespace: flux-system
+spec:
+  interval: 5m0s
+  releaseName: prometheus-adapter
+  targetNamespace: prometheus
+  # install:
+  #   createNamespace: true
+  chart:
+    spec:
+      sourceRef:
+        kind: HelmRepository
+        name: prometheus-community
+      chart: prometheus-adapter
+      interval: 5m0s
