@@ -4,3 +4,4 @@ resources:
   - ../../manifests/external-secrets
   - ../../manifests/test-app
   - ../../manifests/ingress-nginx
+  - ../../manifests/cert-manager
