@@ -8,8 +8,8 @@ spec:
   interval: 5m0s
   releaseName: ingress-nginx
   targetNamespace: ingress-nginx
-  install:
-    createNamespace: true
+  # install:
+  #   createNamespace: true
   chart:
     spec:
       sourceRef:
