@@ -8,3 +8,7 @@ resources:
   - loki-stack.yml
 #  - loki-distributed.yml
 #  - promtail.yml
+configMapGenerator:
+- name: grafana-dashboard-overview
+  files:
+  - kubernetes.json=grafana-dashboard-overview.json
