@@ -28,4 +28,5 @@ spec:
           - name: Loki
             type: loki
             url: http://loki-stack.grafana.svc.cluster.local/
-        # dashboardsConfigMaps:
+    dashboardsConfigMaps:
+      default: "grafana-dashboard-overview"
