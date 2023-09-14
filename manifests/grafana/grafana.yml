@@ -19,10 +19,13 @@ spec:
       interval: 5m0s
   values:
     datasources:
-      - name: Prometheus
-        type: prometheus
-        url: http://prometheus-server.prometheus.svc.cluster.local/
-      - name: Loki
-        type: loki
-        url: http://loki-stack.grafana.svc.cluster.local/
-    # dashboardsConfigMaps:
+      datasources.yaml:
+        apiVersion: 1
+        datasources:
+          - name: Prometheus
+            type: prometheus
+            url: http://prometheus-server.prometheus.svc.cluster.local/
+          - name: Loki
+            type: loki
+            url: http://loki-stack.grafana.svc.cluster.local/
+        # dashboardsConfigMaps:
