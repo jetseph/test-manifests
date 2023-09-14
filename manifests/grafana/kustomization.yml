@@ -10,5 +10,8 @@ resources:
 #  - promtail.yml
 configMapGenerator:
 - name: grafana-dashboard-overview
+  namespace: grafana
   files:
   - kubernetes.json=grafana-dashboard-overview.json
+generatorOptions:
+  disableNameSuffixHash: true
