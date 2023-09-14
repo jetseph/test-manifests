@@ -1,0 +1,19 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: loki-stack
+  namespace: flux-system
+spec:
+  interval: 5m0s
+  releaseName: loki-stack
+  targetNamespace: grafana
+  # install:
+  #   createNamespace: true
+  chart:
+    spec:
+      sourceRef:
+        kind: HelmRepository
+        name: grafana
+      chart: loki-stack
+      interval: 5m0s
