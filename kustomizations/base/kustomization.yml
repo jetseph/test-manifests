@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   # - ../../manifests/prometheus
   # - ../../manifests/grafana
-  # - ../../manifests/observability
+  - ../../manifests/observability
   - ../../manifests/ingress-nginx
   - ../../manifests/cert-manager
   - ../../manifests/test-app
