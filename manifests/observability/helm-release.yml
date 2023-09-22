@@ -14,5 +14,5 @@ spec:
         kind: HelmRepository
         name: test-charts
       chart: observability
-      version: 0.0.2
+      version: 0.0.3
       interval: 5m0s
