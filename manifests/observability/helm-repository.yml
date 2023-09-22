@@ -2,10 +2,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: test-manifests
+  name: test-charts
   namespace: observability
 spec:
   interval: 5m0s
-  url: https://github.com/jetseph/test-manifests/charts
+  url: https://jetseph.github.io/test-charts
   ref:
     branch: main

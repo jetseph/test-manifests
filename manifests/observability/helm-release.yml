@@ -12,6 +12,6 @@ spec:
     spec:
       sourceRef:
         kind: HelmRepository
-        name: test-manifests
+        name: test-charts
       chart: observability
       interval: 5m0s
