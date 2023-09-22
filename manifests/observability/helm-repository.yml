@@ -7,5 +7,3 @@ metadata:
 spec:
   interval: 5m0s
   url: https://jetseph.github.io/test-charts
-  ref:
-    branch: main
