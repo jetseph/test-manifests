@@ -15,3 +15,6 @@ spec:
         name: test-charts
       chart: observability
       interval: 5m0s
+  values:
+    promtail:
+      enabled: false
