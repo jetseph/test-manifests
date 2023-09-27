@@ -3,6 +3,5 @@ kind: Kustomization
 resources:
   - ../../manifests/observability
   - ../../manifests/ingress
-  # - ../../manifests/ingress-nginx
-  # - ../../manifests/cert-manager
+  - ../../manifests/private-ca
   - ../../manifests/test-app
