@@ -3,5 +3,4 @@ kind: Kustomization
 resources:
   - namespace.yml
   - helm-repository.yml
-  - prometheus.yml
-  - prometheus-adapter.yml
+  - helm-release.yml
