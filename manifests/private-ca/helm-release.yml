@@ -5,6 +5,8 @@ metadata:
   name: private-ca
   namespace: private-ca
 spec:
+  dependsOn:
+    - name: ingress
   interval: 5m0s
   releaseName: private-ca
   targetNamespace: private-ca
@@ -14,5 +16,5 @@ spec:
         kind: HelmRepository
         name: test-charts
       chart: private-ca
-      version: 0.0.6
+      version: 0.0.7
       interval: 5m0s
