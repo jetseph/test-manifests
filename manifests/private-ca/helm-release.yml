@@ -17,5 +17,5 @@ spec:
         kind: HelmRepository
         name: test-charts
       chart: private-ca
-      version: 0.0.7
+      version: 0.0.8
       interval: 5m0s
