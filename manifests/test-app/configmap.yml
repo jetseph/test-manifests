@@ -11,3 +11,6 @@ data:
         <p>httpd web server on k8s pod with this content on configmap</p>
       </body>
     </html>
+  robots.txt: |
+    User-agent: *
+    Disallow: /
