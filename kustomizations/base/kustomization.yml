@@ -5,4 +5,5 @@ resources:
   - ../../manifests/ingress
   - ../../manifests/private-ca
   - ../../manifests/trust
+  - ../../manifests/secrets
   - ../../manifests/test-app
