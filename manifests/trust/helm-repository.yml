@@ -1,0 +1,9 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: test-charts
+  namespace: trust
+spec:
+  interval: 5m0s
+  url: https://jetseph.github.io/test-charts
